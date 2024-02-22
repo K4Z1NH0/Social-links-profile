@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+
+    /* Primary */
+    --Green: hsl(75, 94%, 57%);
+
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+
+    /* font */
+    --Inter: "Inter", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--Off-Black);
+    font-family: var(--Inter);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main .card{
+    border-radius: 1rem;
+    margin: 0 auto;
+    align-items: center;
+    padding: 2rem 2rem;
+    flex-direction: column;
+    display: flex;
+    background-color: var(--Dark-Grey);
+}
+
+main .card img{
+    width: 5rem;
+    border-radius: 100%;
+}
+
+main .card .name{
+    margin-top: 1.5rem;
+    color: var(--White);
+    font-weight: 500;
+}
+
+main .card .address{
+    font-weight: 500;
+    margin-top: 0.5rem;
+    color: var(--Green);
+}
+
+main .card .title{
+    margin-top: 1rem;
+    color: var(--White);
+    font-weight: 300;
+    opacity: 80%;
+}
+
+main .card button{
+    font-family: var(--Inter);
+    font-weight: 600;
+    color: var(--White);
+    border-radius: 0.5rem;
+    width: 18rem;
+    padding: 1rem;
+    border: none;
+    background-color: var(--Grey);
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+
+main .card button:hover{
+    font-weight: 700;
+    transition: 0.3s;
+    cursor: pointer;
+    color: var(--Grey);
+    background-color: var(--Green);
+}
+
+@media (max-width: 320px){
+    main .card{
+        border-radius: 1rem;
+        padding: 0.5rem 0.5rem; 
+    }  
+    
+    main .card button{
+        width: 15rem;
+        padding: 0.5rem;
+    }
+}
